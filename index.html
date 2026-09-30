@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logoTest.jpg" alt="Logo">
+        </div>
+        <nav id="nav">
+            <ul class="navbar">
+                <li><a href="#banner">Início</a></li>
+                <li><a href="#cardapio">Cardapio</a></li>
+                <li><a href="#banner2">banner2</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+                <li class="botaoPedir"><img src="assets/img/whatsapp.png" alt="logo whatsapp"><a class="button button-nav" href="#contato">Peça pelo<br>WhatsApp </a></li>
+            </ul>
+        </nav>
+        <!-- Menu hamburguer -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- ----------------------Banner---------------------- -->
+        <div id="banner">
+            <h3 id="titulo-cima">SABOR DE VERDADE, TODO DIA!</h3>
+            <h1 id="titulo-meio">Comida caseira<br>com gostinho de</h1>
+            <h2 id="titulo-baixo">almoço de mãe</h2>
+            <p>Na Bonapeti PG você encontra aquele sabor de comida caseira que dá vontade de repetir. Escolha seu prato favorito e peça na marmitex pelo WhatsApp. Simples, rápido e delicioso!</p>
+        </div>
+        <!-- ----------------------Cardapio---------------------- -->
+        <div id="cardapio" class="container-cardapio">
+            <div class="container-cardapio-titulo">
+                <h1>Nosso cardápio</h1>
+                <h3>Variedade e sabor em cada prato</h3>
+            </div>
+            <div class="container-cardapio-linha">
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Frango à Parmegiana">
+                        <div class="titulo-prato">
+                            <h3>Frango à Parmegiana</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Bife de Contrafilé">
+                        <div class="titulo-prato">
+                            <h3>Bife de Contrafilé</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Filé de Frango">
+                        <div class="titulo-prato">
+                            <h3>Filé de Frango</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Bisteca Suína">
+                        <div class="titulo-prato">
+                            <h3>Bisteca Suína</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Panqueca de Carne">
+                        <div class="titulo-prato">
+                            <h3>Panqueca de Carne</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Panqueca de Frango">
+                        <div class="titulo-prato">
+                            <h3>Panqueca de Frango</h3>
+                        </div>
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Panqueca de Presunto e Queijo">
+                        <div class="titulo-prato">
+                            <h3>Panqueca de Presunto e Queijo</h3>
+                        </div>    
+                    </div>
+                    <div class="container-cardapio-prato">
+                        <img src="assets/img/logoTest.jpg" alt="imagem Variedades de Saladas">
+                        <div class="titulo-prato">
+                            <h3>Variedades de Saladas</h3>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <!-- ----------------------Banner2---------------------- -->
+        <div id="banner2">
+            <h3 id="titulo-cima">SABOR DE VERDADE, TODO DIA!</h3>
+            <h1 id="titulo-meio">Peça agora!</h1>
+            <p></p>
+        </div>
+
+        <div id="contato">
+            <h1>Contato</h1>
+        </div>
+
+    </main>
+    <footer>
+        
+    </footer>
+
+
+
+    <!-- -------------------------menuburguer------------------------- -->
+      <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.querySelector('.navbar');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navbar.classList.toggle('active');
+        });
+
+        // Opcional: Fecha o menu automaticamente ao clicar em qualquer link dele
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navbar.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

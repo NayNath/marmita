@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #F8F0EB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*******************************HEADER*******************************/
+header{
+    grid-column: 1 / -1;
+    background-color: #89c0ff33;
+    display: flex;
+    justify-content:space-around;
+    padding: 0px ;
+    align-items: center;
+}
+div.logo, div.logo, img{
+    width: 100px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    margin: 0 10px;
+}
+a:hover{
+    color: #D40212;
+    text-decoration: underline;
+}
+li.botaoPedir{
+    margin-left: 30px;
+    background-color: #5BD48D;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.navbar img{
+    width: 30px;
+
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.phone {display: none;}
+.tablet {display: none;}
+.pc {display: block;}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .phone {display: none;}
+    .tablet {display:block;}
+    .pc {display: none;}
+    header {
+        padding: 2px 30px;
+    }
+    .menu-toggle {
+        display: flex;
+        order: 2;
+    }
+    .botao-orçamento {
+        order: 1;
+        margin-right: 15px;
+    }
+    ul.navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(164, 10, 12, 0.95);
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    }
+    .navbar li {
+        padding: 15px 0;
+    }
+    ul.navbar.active {
+        display: flex;
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    .phone {display: block;}
+    .tablet {display:none;}
+    .pc {display: none;}
+    header {
+        padding: 0 30px;
+    }
+    .botao-orçamento {
+        display: none;
+    }
+    .menu-celular-only {
+        display: block;
+        margin-top: 15px;
+    }
+    .button-nav {
+        display: inline-block;
+        border: 2px solid #f9f9f9;
+        padding: 8px 30px !important;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    ul.navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(164, 10, 12, 0.98);
+        text-align: center;
+        padding: 30px 0;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    }
+    .navbar li {
+        padding: 15px 0;
+    }
+    ul.navbar.active {
+        display: flex;
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+/*******************************MAIN*******************************/
+main{
+    grid-column: 1/-1;
+    flex-direction: column;
+}
+/*----banner----*/
+div#banner{
+    background-color: aliceblue;
+    /*background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 100px;
+    margin-bottom: 100px;
+}
+/*----cardapio----*/
+div#cardapio{
+    flex-direction: column;
+    padding: 0px 100px;
+    margin-bottom: 200px;
+}
+div.container-cardapio-titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+div.container-cardapio-linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #89c0ff;
+}
+div.container-cardapio-prato{
+    margin: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.container-cardapio-prato img{
+    width: 200px;
+}
+div.titulo-prato{
+    width: 200px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    /* Cor amarela aproximada */
+    background-color: #F8E06A;
+    /* Formato irregular recortado */
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    /* Leve inclinação para parecer feito à mão */
+    transform: rotate(-1.5deg);
+    display: inline-block;
+}
+/*----banner2----*/
+
+
+.phone {display: none;}
+.tablet {display: none;}
+.pc {display: block;}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .phone {display: none;}
+    .tablet {display:block;}
+    .pc {display: none;}
+    
+    div#banner{
+        padding: 100px 50px;
+    }
+    div#cardapio{
+        padding: 0px 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .phone {display: block;}
+    .tablet {display:none;}
+    .pc {display: none;}
+    
+    div#banner{
+        padding: 100px 20px;
+    }
+    div#cardapio{
+        
+        padding: 0px 20px;
+    }
+}
+
+/*******************************FOOTER*******************************/
