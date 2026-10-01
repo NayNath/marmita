@@ -11,8 +11,7 @@
         <div class="logo">
             <img src="assets/img/logo.png" alt="Logo">
         </div>
-        <a class="button button-nav" href="#contato"><img src="assets/img/whatsapp.png" alt="logo whatsapp">Peça pelo<br>WhatsApp </a>
-            
+        <a class="button button-nav" href="#contato"><img src="assets/img/whatsapp.png" alt="logo whatsapp">Peça pelo<br>WhatsApp </a>   
     </header>
 
     <main>
@@ -158,25 +157,5 @@
         <p>©2026 Velo-Stark. Todos os direitos reservados.</p>
     </footer>
 
-
-
-    <!-- -------------------------menuburguer------------------------- -->
-      <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navbar = document.querySelector('.navbar');
-
-        mobileMenu.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            navbar.classList.toggle('active');
-        });
-
-        // Opcional: Fecha o menu automaticamente ao clicar em qualquer link dele
-        document.querySelectorAll('.navbar a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                navbar.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>
