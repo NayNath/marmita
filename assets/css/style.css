@@ -28,18 +28,12 @@ header{
 div.logo, div.logo, img{
     width: 100px;
 }
-ul.navbar{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
+
 a{
     text-decoration: none;
     color: #000000;
     font-size: 20px;
     margin: 0 10px;
-}
-li.botaoPedir{
     margin-left: 30px;
     background-color: #5BD48D;
     padding: 10px;
