@@ -12,7 +12,7 @@ body{
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(12, 1fr);
-    background-color:  aliceblue;
+    background-color:  #fffef9;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -281,7 +281,7 @@ div.container-cardapio-linha{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #89c0ff;
+    background-color: #fffefa;
 }
 div.container-cardapio-prato{
     margin: 20px 80px;
