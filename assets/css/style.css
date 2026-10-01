@@ -202,15 +202,13 @@ div#banner{
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif
 }
-#titulo-texto{
-    /*width: 400px;*/
-    width: 600px;
-}
-
-div#banner-imgs{
+div#banner-topicos{
+    width: 800px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 div.banner-item{
     display: flex;
@@ -232,7 +230,7 @@ div.banner-item-img img{
     width: 50px;
     filter: invert(100%);
 }
-p{
+p.banner-item-text{
     font-size: 18px;
     font-weight: bold;
     width: 70px;
@@ -262,7 +260,6 @@ hr.esquerda{
 hr.direita{
     clip-path: polygon(100% 100%, 0 1%, 0 100%, 20% 65%);
 }
-
 div.linha-titulo-img img{
     width:50px;
     margin: 0 20px;
@@ -273,7 +270,6 @@ h2#titulo-cardapio{
     font-size: 50px;
     transform: rotate(-1.5deg);
 }
-
 div.container-cardapio-titulo{
     display: flex;
     align-items: center;
@@ -301,9 +297,7 @@ div.titulo-prato{
     margin-top: -25px;
     position: relative;
     z-index: 2;
-    /* Cor amarela aproximada */
     background-color: #F8E06A;
-    /* Formato irregular recortado */
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 10px 20px;
     text-align: center;
@@ -333,6 +327,23 @@ div#banner2{
     div#banner{
         padding: 100px 50px;
     }
+    #titulo-meio{
+        font-size: 80px;
+    }
+    #titulo-baixo{
+        font-size: 60px;
+    }
+    
+    div#banner-topicos{
+        width: 700px;
+        justify-content: space-between;
+    }
+    div.banner-item{
+        margin-bottom: 20px;
+    }
+    div.banner-item-img, div.banner-item-img img{
+        width: 40px;
+    }
     div#cardapio{
         padding: 0px 50px;
     }
@@ -347,6 +358,26 @@ div#banner2{
     
     div#banner{
         padding: 100px 20px;
+    }
+    #titulo-meio{
+        font-size: 60px;
+    }
+    #titulo-baixo{
+        font-size: 40px;
+    }
+    div#banner-topicos{
+        width: 400px;
+        justify-content: space-between;
+    }
+    div.banner-item{
+        margin-bottom: 20px;
+    }
+    div.banner-item-img, div.banner-item-img img{
+        width: 30px;
+    }
+    p.banner-item-text{
+        font-size: 16px;
+        width: 70px;
     }
     div#cardapio{
         padding: 0px 20px;
