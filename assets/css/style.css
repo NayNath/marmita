@@ -179,7 +179,7 @@ div.container-cardapio-titulo{
     flex-direction: column;
     margin-bottom: 50px;
 }
-div.container-cardapio-linha{
+div.container-cardapio-pratos{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,6 +187,7 @@ div.container-cardapio-linha{
     background-color: #fefefe;
     border-radius: 20px;
     border: solid 1px #F8BE37;
+    padding: 30px 10px;
 }
 div.container-cardapio-prato{
     margin: 20px 80px;
@@ -195,7 +196,8 @@ div.container-cardapio-prato{
     align-items: center;
 }
 div.container-cardapio-prato img{
-    width: 200px;
+    width: 250px;
+    height: 250px;
 }
 div.titulo-prato{
     width: 200px;
@@ -204,11 +206,10 @@ div.titulo-prato{
     z-index: 2;
     background-color: #F8E06A;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding: 10px 20px;
+    padding: 10px;
     text-align: center;
     font-weight: bold;
     color: #1a1a1a;
-    /* Leve inclinação para parecer feito à mão */
     transform: rotate(-1.5deg);
     display: inline-block;
 }
@@ -295,15 +296,16 @@ div#banner2{
     }
     div.banner-item-img, div.banner-item-img img{
         width: 30px;
-        
     }
     p.banner-item-text{
         font-size: 14px;
         width: 70px;
-        
     }
     div#cardapio{
         padding: 0px 20px;
+    }
+    div.container-cardapio-pratos{
+        padding: 30px 5px;
     }
     div#banner2{
         padding: 100px 20px;
