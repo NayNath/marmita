@@ -184,7 +184,9 @@ div.container-cardapio-linha{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #fffefa;
+    background-color: #fefefe;
+    border-radius: 20px;
+    border: solid 1px #F8BE37;
 }
 div.container-cardapio-prato{
     margin: 20px 80px;
